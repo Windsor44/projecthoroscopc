@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horoscope</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="icon" type="img/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Horoscope</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Main <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="#contacts">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link smooth" href="#signs">Signs</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Divination taro</a>
+                                <a class="dropdown-item" href="#">Chinese horoscope</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Advertising</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Magic search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Fate</button>
+                    </form>
+                </div>
+            </nav>
+            <div id="carouselHoroscope" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/slideHoroscopeblue.png" alt="horoscopeBlue">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slideHoroscopegreen.png" alt="horoscopeGreen">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/slideHoroscopeyellow.png" alt="horoscopeYellow">
+                    </div>
+                </div>
+                    <a class="carousel-control-prev" href="#carouselHoroscope" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span></a>
+                    <a class="carousel-control-next" href="#carouselHoroscope" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span></a>
+            </div>
+        </header>
+        <main>
+
+            <h1 id="signs">Choose your destiny</h1>
+            <div class="row">
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/capricorn.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Capricorn</h5>
+                        <p class="card-text">Dec 22 - Jan 19</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyCapricorn">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/aquarius.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Aquarius</h5>
+                        <p class="card-text">Jan 20 - Feb 18</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyAquarius">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/pisces.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pisces</h5>
+                        <p class="card-text">Feb 19 - Mar 20</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyPisces">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/psychic.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">The Expert</h5>
+                        <p class="card-text">i am psychic my rate is 1.99 per min i am natural born psychic...</p>
+                        <a href="#" class="btn btn-primary">Call</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/aries.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Aries</h5>
+                        <p class="card-text">Mar 21 - Apr 19</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyAries">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/taurus.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Taurus</h5>
+                        <p class="card-text">Apr 20 - May 20</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyTaurus">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/gemini.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Gemini</h5>
+                        <p class="card-text">May 21 - Jun 20</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyGemini">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/theexpert.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Main Psychic</h5>
+                        <p class="card-text">Je suis médium avec et sans support,I'm a psychic, with and without...</p>
+                        <a href="#" class="btn btn-primary">Call</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/exorcist.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro Exorcist</h5>
+                        <p class="card-text">I'll help you!</p>
+                        <a href="#" class="btn btn-primary">Call</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/cancer.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cancer</h5>
+                        <p class="card-text">Jun 21 - Jul 22</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyCancer">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/leo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Leo</h5>
+                        <p class="card-text">Jul 23 - Aug 22</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyLeo">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/virgo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Virgo</h5>
+                        <p class="card-text">Aug 23 - Sep 22</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyVirgo">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/witch.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">an Ancient Witch</h5>
+                        <p class="card-text">Just as we must treat others with love and kindness, we need to do the same for ourselves. Here’s how.</p>
+                        <a href="#" class="btn btn-primary">Call</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/libra.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Libra</h5>
+                        <p class="card-text">Sep 23 - Oct 22</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyLibra">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/scorpio.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Scorpio</h5>
+                        <p class="card-text">Oct 23 - Now 21</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailyScorpio">Apply</a>
+                    </div>
+                </div>
+                <div class="card col-6 col-md-4 col-lg-3">
+                    <img class="card-img-top" src="img/sagittarius.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sagittarius</h5>
+                        <p class="card-text">Now 22 - Dec 21</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#dailySagittarius">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+           <h1 id="contacts">Contacts</h1> 
+           <div>
+               <input class="form-control form-control-lg" type="text" placeholder="login">
+               <input class="form-control form-control-lg" type="email" placeholder="email">
+               <input class="form-control form-control-lg" type="text" placeholder="jast think, we'll know">
+               <button type="button" class="btn btn-dark">Do nothing</button>
+           </div>
+        </footer>
+    </div>
+<div class="modal fade" id="dailyCapricorn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: Once again, you'll be asked to take charge of a situation that's been left unmanaged. Fortunately, you just love that sort of thing, and with recent successes under your belt, you'll be even more confident. The best part
+                        is that you're also going to be in the mood to undertake a task like this. The kind thing to do, however, would be to remind everyone who wants some of your recreational time that you won't have any, since duty calls. They'll understand.
+                        They know how you get.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="dailyAquarius" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: You've got a lot going on at home now, but someone you love seems to be intent on getting you to take a little trip -- and it's not going to be down Memory Lane, either. 
+                    They want you on their arm in an exotic location, and they'll present their case with remarkable persuasion. 
+                    Of course, it's all up to you.
+                    If you can do it now, you'll probably want to, but if family responsibilities won't allow it, you can always reschedule.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyPisces" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: You've gone way past just thinking there might be something between you.
+                    You're sure of it, and you know they feel the same.
+                    So what's the next step? Well, it might be to talk to them about it -- 
+                    to let them know what you're feeling and give them a chance to tell you what's on their mind, too.
+                    An invitation to dinner would be a good place to start. If all goes well, order one dessert and two forks.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyAries" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: You've got quite the day ahead of you, so get up early and get it started as soon as possible. 
+                    Of course, no one's ever had to prompt you to get the show on the road, and you've also never needed to be talked into being first in line.
+                    But today, you'll be the one who's talking everyone around you either into or out of whatever you see fit -- and you'll have remarkable success at it, too.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyTaurus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: You've been dutiful, diligent and respectful to your elders. 
+                    You've done everything you could possibly do for all parties concerned -- not just lately, but for as long as you can remember. 
+                    You've gone even further above and beyond the call of duty over recent days and weeks, so no one could possibly begrudge you at least one or two fun-filled days.
+                    Well, guess what? Yep. Here they come. Fasten your seatbelt and prepare for some well-deserved fun.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyGemini" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: It's not hard to tell when you're excited. 
+                    It's a natural state of affairs when your eyes are open. 
+                    You approach every day with the kind of excitement most people only see (and adore) in children. 
+                    It's refreshing, exhilarating and highly contagious.
+                    Your mission now is to recognize that wonderful quality in yourself and spread it around. 
+                    You own the kind of enthusiasm that just about anyone would pay big bucks to learn -- or at least be delighted to spend some time around.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyCancer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: You've never been a fan of letting the sun set on angry words -- or uncertain ones, for that matter. 
+                    If you and a loved one have left things unsolved between you, don't let that continue any longer.
+                    Lure them over to your place any way you can -- maybe via the promise of one of your amazing home-cooked meals.
+                    Regardless, just don't let them even think about leaving until you've cleared the air.
+                    There's absolutely no substitute for honesty, and you know it.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyLeo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: The stuff you're putting out can only lead to one thing, no matter what direction you aim it in: A serious attraction.
+                    If you're already in that mode, you're guaranteed success.
+                    Whomever you're romantically attracted to doesn't stand a chance of resistance. If you're not interested, that's a different story.
+                    Take some time away from the person you've been inadvertently charging up -- and practice being a bit less irresistible, just for the heck of it.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyVirgo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: You've always been a no-nonsense kind of person, most especially when it comes to your work. 
+                    Your coworkers will be more than willing to attest to that fact, but if a higher-up fails to follow the rules or drops the ball in any way now, no one will need to say a word. 
+                    You'll be more than willing to let them have it, no matter where you are or who happens to be in the vicinity. Just be careful.
+                    Paychecks come in handy.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyLibra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: You're restless, and quite eager to jump right out of your rut -- for the moment, at least.
+                    You'll have absolutely no problem finding someone to go with you, and with your encouragement, 
+                    they'll have no problem talking their way into a few days (or a lot of days) off. Don't hesitate to ask them along for the ride.
+                    You know how you are. You hate to do anything alone, and when you're off for an adventure, that goes double.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailyScorpio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: This is one of those days that can't deliberately be arranged and won't easily be forgotten. 
+                    Your job is to spend each and every minute with someone who'll appreciate just how special it is. 
+                    Of course, you being who you are and having the personal depth that you have, that won't be a problem.
+                    You may have a tough time deciding which deserving soul to give this time to,
+                    but if that's your worst problem, you'll pardon us all for not being all that sympathetic.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="modal fade" id="dailysagittarius" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DAILY HOROSCOPE</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <h4>AUG 15, 2018: The concept of having fans is nothing new to fire signs like yourself.
+                    In addition to the well-known hypnotic effect that fire has on us all, the energy and enthusiasm you guys put out can't help but attract a following.
+                    At the moment, however, you'd better wield this weapon carefully, because your already lethal charm will be even more irresistible.
+                    It won't just be tough to say no to you, it will be downright impossible -- for mere mortals, anyway.</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/smooth-scroll.js"></script>
+</body>
+
+</html>
